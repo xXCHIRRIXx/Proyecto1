@@ -1,0 +1,289 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Tipografía general */
+}
+
+header {
+    background-color: #c91d14; 
+    text-align: center; 
+    padding: 30px; 
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+}
+
+h1 {
+    font-family: 'Times New Roman'; 
+    font-size: 2.2em; 
+    color: white; 
+    margin: 0; 
+}
+
+nav {
+    background-color: white; 
+    display: flex; 
+    justify-content: center; /* Centrar los elementos */
+    border-bottom: 1px solid #867171; /* Agregar borde inferior */
+    box-shadow: 0 4px 10px #867171; /* Agregar sombra */
+}
+
+nav ul {
+    list-style-type: none; 
+    display: flex; 
+    width: 100%; 
+    padding: 0; 
+    margin: 0; 
+    flex-wrap: wrap; /* Permite que los elementos se ajusten */
+}
+
+nav ul li {
+    flex: 1 1 120px; /* Permite que los li crezcan y se encojan */
+    text-align: center; 
+    position: relative; /* Necesario para el borde */
+}
+
+nav ul li:not(:last-child)::after {
+    content: ''; 
+    position: absolute; 
+    right: 0; 
+    top: 10%; 
+    height: 80%; 
+    width: 1px; 
+    background-color: #867171; 
+}
+
+nav a {
+    text-decoration: none; 
+    color: black; 
+    display: block; 
+    padding: 15px 0; 
+    width: 100%; 
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+nav a:hover {
+    background-color: #e9363c; 
+    color: white; 
+}
+
+h2 {
+    text-align: center; /* Centrar el texto */
+    font-family: Arial, sans-serif; /* Tipografía sans-serif */
+    margin: 40px 10px 0 10px; /* Margen superior e inferior */
+}
+
+.description-card {
+    max-width: 650px; /* Aumenta el ancho máximo de la tarjeta */
+    margin: 20px auto; /* Centrando la tarjeta */
+    padding: 20px; /* Aumenta el espaciado interno */
+    background-color: #f9f9f9; /* Color de fondo de la tarjeta */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px #867171; /* Sombra sutil */
+    text-align: center; /* Centrar el texto dentro de la tarjeta */
+}
+
+.description-card p {
+    font-family: Arial, sans-serif; /* Tipografía sans-serif */
+    color: black; /* Color del texto */
+    line-height: 1.5; /* Espaciado entre líneas */
+    font-size: 1.2em; /* Aumenta el tamaño de la letra */
+}
+
+.music-icons {
+    margin: 40px 0; /* Margen superior e inferior */
+}
+
+.music-icons ul {
+    list-style-type: none; /* Eliminar puntos de lista */
+    padding: 0; /* Eliminar padding */
+    display: flex; /* Disposición en fila */
+    width: 100%; /* Ocupar el 100% del ancho */
+}
+
+.music-icons li {
+    flex: 1; /* Cada ítem ocupa el mismo espacio */
+    text-align: center; /* Centrar el texto */
+    display: flex; /* Flex para alinear íconos y texto */
+    flex-direction: column; /* Colocar ícono arriba y texto abajo */
+    align-items: center; /* Centrar horizontalmente */
+}
+
+.music-icons .icon {
+    width: 40px; /* Ancho del icono */
+    height: 40px; /* Alto del icono */
+    margin-bottom: 5px; /* Espacio entre el icono y el texto */
+}
+
+@media (max-width: 600px) {
+    .music-icons li {
+        flex-basis: 100%; /* Los íconos ocupan toda la línea en pantallas pequeñas */
+    }
+}
+
+.music-icons h2 {
+    margin-top: 30px; /* Margen superior e inferior */
+    margin-bottom: 40px;
+    font-size: 1.5em; /* Aumentar el tamaño del texto si lo deseas */
+}
+
+.location-card {
+    max-width: 750px; /* Ancho máximo de la tarjeta */
+    margin: 20px auto; /* Centrando la tarjeta */
+    background-color: #f9f9f9; /* Color de fondo de la tarjeta */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px #867171; /* Sombra sutil */
+    text-align: center; /* Centrar el texto dentro de la tarjeta */
+    margin-bottom: 70px;
+}
+
+.locate-button {
+    background-color: #c91d14; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar el cursor al pasar por encima */
+    margin-top: 15px; /* Margen superior */
+    transition: background-color 0.3s; /* Transición suave */
+}
+
+.locate-button:hover {
+    background-color: #e9363c; /* Color al pasar el mouse */
+}
+
+.location-card h2 {
+    padding-bottom: 25px; /* Añadir margen superior e inferior */
+    padding-top: 20px;
+}
+
+.location-card p {
+    padding-bottom: 10px; 
+}
+
+footer {
+    background-color: #c91d14; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 20px 0; /* Espaciado interno */
+    text-align: center; /* Centrar texto */
+}
+
+.footer-bottom {
+    border-top: 1px solid #867171; /* Borde superior */
+    padding: 10px 0; /* Espaciado interno */
+    font-size: 0.9em; /* Tamaño de fuente más pequeño */
+}
+
+.contact-container {
+    display: flex; /* Usar flexbox para disposición horizontal */
+    justify-content: space-around; /* Espaciado entre tarjetas */
+    margin: 40px 10px; /* Margen superior e inferior */
+    flex-wrap: wrap; /* Permitir ajuste en pantallas pequeñas */
+}
+
+.contact-card {
+    max-width: 300px; /* Ancho máximo de la tarjeta */
+    margin: 20px; /* Margen entre tarjetas */
+    padding: 20px; /* Espaciado interno */
+    background-color: #f9f9f9; /* Color de fondo */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px #867171; /* Sombra sutil */
+    text-align: center; /* Centrar texto */
+}
+
+.contact-card h3 {
+    margin: 0 0 15px 0; /* Margen inferior */
+}
+
+.contact-button {
+    display: inline-block; /* Permitir padding */
+    margin-top: 15px; /* Margen superior */
+    padding: 10px 15px; /* Espaciado interno */
+    background-color: #c91d14; /* Color de fondo */
+    color: white; /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s; /* Transición suave */
+}
+
+.contact-button:hover {
+    background-color: #e9363c; /* Color al pasar el mouse */
+}
+
+.contact {
+    text-align: center;
+}
+
+.contact-image {
+    width: 200px; /* Ancho de la imagen */
+    height: 200px; /* Alto de la imagen */
+    border-radius: 100%; /* Borde redondeado completamente */
+    object-fit: cover; /* Ajuste de la imagen */
+    margin-bottom: 15px; /* Margen inferior para separar de texto */
+}
+
+.policy-card {
+    max-width: 750px; /* Ancho máximo de la tarjeta */
+    margin: 20px auto; /* Centrando la tarjeta */
+    padding: 20px; /* Espaciado interno */
+    background-color: #f9f9f9; /* Color de fondo */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px #867171; /* Sombra sutil */
+    text-align: left; /* Alinear texto a la izquierda */
+    margin-bottom: 50px;
+}
+
+.policy-card h2 {
+    margin-bottom: 15px; /* Margen inferior */
+}
+
+.policy-card ul {
+    margin-left: 20px; /* Margen izquierdo para listas */
+}
+
+
+.video-container {
+    text-align: center;
+    margin: 20px auto;
+}
+
+video {
+    width: 80%;
+    max-width: 600px;
+    border-radius: 8px;
+}
+
+.custom-description {
+    max-width: 650px; /* Aumenta el ancho máximo de la tarjeta */
+    margin: 15px auto 25px; /* Ajusta márgenes superior e inferior */
+    padding: 20px; /* Espaciado interno */
+    background-color: #f9f9f9; /* Color de fondo de la tarjeta */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px #867171; /* Sombra sutil */
+    text-align: center; /* Centrar el texto dentro de la tarjeta */
+}
+
+.custom-description p {
+    font-family: Arial, sans-serif; /* Tipografía sans-serif */
+    color: black; /* Color del texto */
+    line-height: 1.5; /* Espaciado entre líneas */
+    font-size: 1.2em; /* Aumenta el tamaño de la letra */
+}
+
+.image-container{
+    display:flexbox;
+    text-align: center;
+    margin: 25px 0 15px 0;
+}
+
+.familia {
+    width: 900px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 25px;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 2px 5px #867171;
+}
+
