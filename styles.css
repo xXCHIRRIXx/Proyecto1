@@ -232,6 +232,7 @@ footer {
     border-radius: 8px; /* Bordes redondeados */
     box-shadow: 0 2px 5px #867171; /* Sombra sutil */
     text-align: left; /* Alinear texto a la izquierda */
+    margin-bottom: 55px;
 }
 
 
