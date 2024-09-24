@@ -74,7 +74,7 @@ h2 {
 }
 
 .description-card {
-    max-width: 650px; /* Aumenta el ancho máximo de la tarjeta */
+    max-width: 75%; /* Aumenta el ancho máximo de la tarjeta */
     margin: 20px auto; /* Centrando la tarjeta */
     padding: 20px; /* Aumenta el espaciado interno */
     background-color: #f9f9f9; /* Color de fondo de la tarjeta */
@@ -128,13 +128,14 @@ h2 {
 }
 
 .location-card {
-    max-width: 750px; /* Ancho máximo de la tarjeta */
+    max-width: 75%; /* Ancho máximo de la tarjeta */
     margin: 20px auto; /* Centrando la tarjeta */
     background-color: #f9f9f9; /* Color de fondo de la tarjeta */
     border-radius: 8px; /* Bordes redondeados */
     box-shadow: 0 2px 5px #867171; /* Sombra sutil */
     text-align: center; /* Centrar el texto dentro de la tarjeta */
     margin-bottom: 70px;
+    padding: 0 20px 0 20px;
 }
 
 .locate-button {
@@ -224,15 +225,15 @@ footer {
 }
 
 .policy-card {
-    max-width: 750px; /* Ancho máximo de la tarjeta */
-    margin: 20px auto; /* Centrando la tarjeta */
+    max-width: 80%; /* Ancho máximo de la tarjeta */
+    margin: auto;
     padding: 20px; /* Espaciado interno */
     background-color: #f9f9f9; /* Color de fondo */
     border-radius: 8px; /* Bordes redondeados */
     box-shadow: 0 2px 5px #867171; /* Sombra sutil */
     text-align: left; /* Alinear texto a la izquierda */
-    margin-bottom: 50px;
 }
+
 
 .policy-card h2 {
     margin-bottom: 15px; /* Margen inferior */
@@ -249,14 +250,14 @@ footer {
 }
 
 video {
-    width: 80%;
+    width: 90%;
     max-width: 600px;
     border-radius: 8px;
 }
 
 .custom-description {
-    max-width: 650px; /* Aumenta el ancho máximo de la tarjeta */
-    margin: 15px auto 25px; /* Ajusta márgenes superior e inferior */
+    max-width: 80%; /* Aumenta el ancho máximo de la tarjeta */
+    margin: 25px auto 25px; /* Ajusta márgenes superior e inferior */
     padding: 20px; /* Espaciado interno */
     background-color: #f9f9f9; /* Color de fondo de la tarjeta */
     border-radius: 8px; /* Bordes redondeados */
@@ -275,13 +276,13 @@ video {
     display: flex;
     justify-content: center;
     margin: 25px 20px 15px 20px;
-    max-width: 100%; /* Asegura que el contenedor no exceda el ancho de la pantalla */
+    max-width: 95%; /* Asegura que el contenedor no exceda el ancho de la pantalla */
     overflow: hidden; /* Oculta cualquier contenido que sobresalga */
 }
 
 
 .familia {
-    width: 100%; /* Cambia el ancho a 100% para que se ajuste al contenedor */
+    width: 98%; /* Cambia el ancho a 100% para que se ajuste al contenedor */
     height: auto; /* Ajusta la altura automáticamente */
     max-width: 900px; /* Establece un ancho máximo */
     object-fit: cover;
