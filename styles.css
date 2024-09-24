@@ -146,6 +146,7 @@ h2 {
     cursor: pointer; /* Cambiar el cursor al pasar por encima */
     margin-top: 15px; /* Margen superior */
     transition: background-color 0.3s; /* Transición suave */
+    margin-bottom: 25px;
 }
 
 .locate-button:hover {
@@ -270,20 +271,19 @@ video {
     font-size: 1.2em; /* Aumenta el tamaño de la letra */
 }
 
-.image-container{
-    display:flexbox;
-    text-align: center;
-    margin: 25px 0 15px 0;
+.image-container {
+    display: flex;
+    justify-content: center; /* Centra la imagen */
+    margin: 25px 20px 15px 20px;
 }
 
 .familia {
-    width: 900px;
-    height: 400px;
+    width: 100%; /* Cambia el ancho a 100% para que se ajuste al contenedor */
+    height: auto; /* Ajusta la altura automáticamente */
+    max-width: 900px; /* Establece un ancho máximo */
     object-fit: cover;
     border-radius: 25px;
-    border-color: black;
-    border-style: solid;
-    border-width: 1px;
+    border: 1px solid black; /* Simplifica la propiedad de borde */
     box-shadow: 0 2px 5px #867171;
 }
 
